@@ -1,0 +1,82 @@
+# ==============================
+# Environment variables & secrets
+# ==============================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+client_secret*.json
+
+# Google OAuth credentials and tokens
+gmail/token.json
+gmail/credentials.json
+gmail/*token*.json
+
+# Telegram session and authentication
+telegram/*.session
+telegram/*.session-*
+telegram/*.session-journal
+telegram/*session*
+telegram/*auth*
+
+# ==============================
+# Sync checkpoints
+# ==============================
+gmail/sync_checkpoint.json
+gmail/sync_checkpoint.json.bak
+gmail/sync_checkpoint.tmp
+telegram/sync_checkpoints.json
+telegram/sync_checkpoints.tmp
+
+# ==============================
+# Personal messages and generated data
+# ==============================
+output/
+data/
+logs/
+*.log
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+randomm.py
